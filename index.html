@@ -26,9 +26,9 @@
             <img src="/images/section_1/kompare.png" />
           </div>
           <div class="nav-links">
-            <a href="#">Usluge</a>
-            <a href="#">Savjeti</a>
-            <a href="#">O nama</a>
+            <a href="#usluge">Usluge</a>
+            <a href="#savjeti">Savjeti</a>
+            <a href="https://kompare.hr/o-nama/">O nama</a>
             <p>
               <i class="fa fa-phone" aria-hidden="true"></i>
               01 5550666
@@ -81,7 +81,7 @@
     </section>
     <section class="section-two">
       <div class="container">
-        <h1>Odaberi <span>najbolju ponudu</span> uz Kompare</h1>
+        <h1 id="usluge">Odaberi <span>najbolju ponudu</span> uz Kompare</h1>
         <p>
           Kompare je zadnjih 10 godina vodeća stranica za usporedbu polica
           osiguranja i telekomusluga u Hrvatskoj. Tisuće Hrvata pomoću nas svaki
@@ -199,10 +199,11 @@
               <i class="fa fa-plus" aria-hidden="true"></i>
               Koje načine plaćanja mogu koristiti?
             </p>
-            <p>
+            <p id="question" onclick="showAnswer()">
               <i class="fa fa-plus" aria-hidden="true"></i>
               Jesu li u cijenu uključeni svi obavezni porezi?
             </p>
+            <p id="answer">Da, sukladno zakonu obračunat je i u cijenu uključen poseban porez na osiguranja.</p>
             <p>
               <i class="fa fa-plus" aria-hidden="true"></i>
               Od kojih osiguravajućih kuća ću dobiti ponudu?
@@ -305,7 +306,7 @@
             </button>
           </form>
         </div>
-        <h1>Korisni savjeti i trikovi</h1>
+        <h1 id="savjeti">Korisni savjeti i trikovi</h1>
         <div class="tricks">
           <div class="trick-item">
             <img src="/images/section_4/e-isprave.png" />
@@ -436,5 +437,14 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function showAnswer() {
+        var question = document.getElementById("question");
+        question.classList.toggle("open");
+        var answer = document.getElementById("answer");
+        answer.classList.toggle("open");
+      }
+    </script>
   </body>
 </html>

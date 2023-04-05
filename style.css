@@ -150,7 +150,7 @@ html body .section-one .services .service-item .see-more a {
 }
 html body .section-two {
   background-color: #F9F9F9;
-  padding-bottom: 6%;
+  padding-bottom: 4%;
 }
 html body .section-two .container > h1 {
   font-size: 2.5em;
@@ -382,6 +382,7 @@ html body .section-four {
   background-color: #F9F9F9;
   box-shadow: 0 -15px 15px #EDEDED;
   padding-top: 20px;
+  padding-bottom: 7%;
 }
 html body .section-four h1 {
   font-size: 2.5em;
@@ -415,6 +416,18 @@ html body .section-four .faq .wrapper p {
   border-bottom: 1px solid #323232;
   padding-bottom: 10px;
 }
+html body .section-four .faq .wrapper p#question.open {
+  border: 0;
+}
+html body .section-four .faq .wrapper p#answer {
+  display: none;
+  font-weight: 500;
+  border: 0;
+  padding-left: 25px;
+}
+html body .section-four .faq .wrapper p#answer.open {
+  display: block;
+}
 html body .section-four .faq .wrapper p i {
   color: #6A0098;
   padding-right: 10px;
@@ -436,7 +449,7 @@ html body .section-four .users .user img {
   padding-right: 10px;
 }
 html body .section-four .users .user img.stars {
-  height: 20px;
+  height: 13px;
   padding-right: 0;
 }
 html body .section-four .users .user p {
@@ -447,7 +460,7 @@ html body .section-four .users .user .name {
   grid-column: 2;
   grid-row: 1;
   color: #6A0098;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 700;
 }
 html body .section-four .users .user .time {
@@ -459,7 +472,7 @@ html body .section-four .users .user .time {
 html body .section-four .users .user .comment-wrapper {
   grid-column: 2;
   grid-row: 3;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 html body .section-four .call {
   background-color: #FFF;
@@ -535,6 +548,7 @@ html body .section-four .call form button {
   border: 3px solid #F4910F;
   border-radius: 20px;
   padding: 7px 40px;
+  margin-top: 20px;
 }
 html body .section-four .tricks {
   display: flex;
@@ -547,6 +561,9 @@ html body .section-four .tricks .trick-item {
   border: 2px solid #DBDBDB;
   border-radius: 15px;
   width: 48%;
+}
+html body .section-four .tricks .trick-item:first-child .title {
+  color: #6A0098;
 }
 @media only screen and (max-width: 767px) {
   html body .section-four .tricks .trick-item {
@@ -583,7 +600,7 @@ html body .section-four .more-tricks {
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 30px;
-  margin: 4% auto 8%;
+  margin: 4% auto 0;
 }
 html body footer {
   color: #FFF;
